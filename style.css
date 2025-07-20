@@ -1,0 +1,121 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #121212; /* dark background */
+  color: #e0e0e0; /* light text */
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #333;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+}
+
+/* Navigation */
+nav {
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #ffffff;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background-color: #424242;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #333;
+}
+section h2 {
+  color: #90caf9;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Gallery */
+#gallery img {
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #f5f5f5;
+  border-radius: 5px;
+}
+form button {
+  background-color: #2196f3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: #1976d2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  #gallery img {
+    width: 90%;
+  }
+}
